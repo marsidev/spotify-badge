@@ -74,23 +74,24 @@ To make API available you need to specify `API_CORS_HOST` after you deployed the
 When something is playing
 
 ```ts
-type Response = 
-/** When a track is playing */
-{
-	progress: number | null;
-	duration: number;
-	track: string;
-	artist: string;
-	isPlaying: boolean;
-	coverUrl: string;
-	url: string;
-}
+type Response =
+	/** When a track is playing */
+	| {
+			progress: number | null
+			duration: number
+			track: string
+			artist: string
+			isPlaying: boolean
+			coverUrl: string
+			url: string
+	  }
 
-/** When nothing is playing */
-| {
-	isPlaying: false;
-}
+	/** When nothing is playing */
+	| {
+			isPlaying: false
+	  }
 ```
+
 ### Development
 
 - Copy `.env.example` to `.env` and add values to env variables

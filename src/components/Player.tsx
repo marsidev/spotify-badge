@@ -7,7 +7,7 @@ import Equalizer from './Equalizer'
 import TrackInfo from './TrackInfo'
 import SpotifyLogo from './SpotifyLogo'
 import { RefreshIcon } from './RefreshIcon'
-import { TrackInfo as TTrackInfo } from '../lib/spotify'
+import { TrackInfo as TTrackInfo } from '~/lib/spotify'
 
 const width = 540
 const height = 52

@@ -6,7 +6,7 @@ import {
 	REFRESH_TOKEN,
 	CLIENT_ID,
 	CLIENT_SECRET,
-} from '../consts'
+} from '~/consts'
 
 export type TrackInfo = {
 	progress: number

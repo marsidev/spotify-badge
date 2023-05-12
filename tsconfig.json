@@ -3,13 +3,18 @@
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "node",
-    "target": "es2020",
+    "target": "ES2022",
     "jsx": "react",
+    "lib": ["ES2022", "DOM"],
     "jsxFactory": "h",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "isolatedModules": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
 }
