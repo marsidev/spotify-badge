@@ -1,3 +1,5 @@
+console.log('secrets:', process.env)
+
 import { VercelRequest, VercelResponse } from '@vercel/node'
 import fetch from 'isomorphic-unfetch'
 import { render } from 'preact-render-to-string'
