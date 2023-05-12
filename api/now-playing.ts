@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from '@vercel/node'
-import { CORS_HOST } from '~/consts'
+import { CORS_HOST } from '~/constants'
 import { getNowPlaying } from '~/lib/spotify'
 
 export default async function nowPlaying(req: VercelRequest, res: VercelResponse) {

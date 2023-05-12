@@ -1,10 +1,8 @@
-console.log('secrets:', process.env)
-
 import { VercelRequest, VercelResponse } from '@vercel/node'
 import fetch from 'isomorphic-unfetch'
 import { render } from 'preact-render-to-string'
 
-import { CLIENT_ID, TOKEN_ENDPOINT, VERCEL_URL } from '~/consts'
+import { CLIENT_ID, TOKEN_ENDPOINT, VERCEL_URL } from '~/constants'
 import { basic } from '~/lib/spotify'
 import RefreshToken from '~/components/RefreshToken'
 
